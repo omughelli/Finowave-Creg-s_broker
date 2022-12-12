@@ -1,0 +1,1142 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* header */
+header{
+    width: 100%;
+    height: 18vh;
+    background-color: rgb(34, 34, 34);
+    position: relative;
+    top: 0;
+    left: 0;
+}
+/* #see_through_header{
+    position: absolute;
+    background-color: transparent;
+} */
+#head{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+#header_title{
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.3rem;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+#header_menus{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+#header_menus nav{
+    width: fit-content;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+#header_menus nav ul li{
+    display: inline-block;
+    padding: 10px 12px;
+    font-size: .9rem;
+}
+#header_menus nav ul li a{
+    color: rgb(243, 243, 243);
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+}
+#header_menus nav ul li:hover a{
+    color: rgb(219, 219, 219);
+}
+
+#header_create_account_section{
+    width: 30%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#header_account_icon{
+    width: 20%;
+    height: 100%;
+    margin-left: 2%;
+    font-size: 2rem;
+    color: #fff;
+}
+#header_create_account_section_btns{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#header_create_account_section_btns button{
+    border: none;
+    color: #fff;
+}
+button{
+    padding: 5px 10px;
+    border-radius: 1.8px;
+    border: none;
+    background-color: transparent;
+    text-transform: capitalize;
+    font-family: 'Courier New', Courier, monospace;
+    transition: all .5s ease-in-out;
+}
+button:hover{
+    background-color: #fc5b3f;
+}
+.menu-icon{
+    padding: 5px 10px;
+    font-size: 2rem;
+    border: 1px solid #ff593c;
+    border-radius: 4px;
+    display: none;
+    font-size: 1.5rem;
+}
+
+#moblie_view_menu{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(34, 34, 34);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+}
+#close_menu_btn{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 10vh;
+    left: 80vw;
+    color: #fff;
+    font-size: 1.5rem;
+    border: 1px solid #ff593c;
+    border-radius: 10px;
+    padding: 10px;
+}
+#moblie_view_menu_container{
+    width: 65%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+#moblie_view_menu nav{
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 7%;
+}
+#moblie_view_menu nav ul li{
+    display: block;
+    padding: 20px 10px;
+    font-size: 1.2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+#moblie_view_menu_container nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+#moblie_view_menu_create_account_section{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#moblie_view_menu_create_account_section button{
+    width: 45%;
+    height: 100%;
+    color: #fff;
+    background-color: #ff593c;
+}
+.sign_up_btn{
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.sign_in_btn{
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#moblie_view_menu_create_account_section hr{
+    width: 0.1px;
+    height: 100%;
+    background-color: #fff;
+}
+
+
+
+
+#slides{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(34, 34, 34);
+    color: #fff;
+}
+#slider{
+    width: 200%;
+    height: 70%;
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    animation: 10s slide infinite;
+    animation-direction: alternate;
+}
+@keyframes slide {
+    0%{
+        left: 0%;
+    }
+    45%{
+        left: 0%;
+    }
+    50%{
+        left: -100%;
+    }
+    100%{
+        left: -100%;
+    }
+}
+.slide{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.slide_text{
+    width: 30%;
+}
+.slide_text h2{
+    font-size: 58px;
+    height: fit-content;
+    margin-bottom: 4%;
+    font-family: "Inter",sans-serif;
+    font-weight: 700;
+}
+.slide_text p{
+    color: rgba(255,255,255,.7);
+    font-size: 1.294rem;
+    line-height: 1.5;
+}
+.slide_image{
+    width: 35%;
+    height: 100%;
+}
+.slide_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#slider_bottom_details_holder{
+    width: 100%;
+    height: 25%;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.slider_bottom_details{
+    width: 20%;
+    height: 100%;
+}
+.slider_bottom_details h2{
+    font-size: 1.059rem;
+    line-height: 1.2;
+    margin-bottom: 2%;
+    font-family: "Inter",sans-serif;
+    font-weight: 700;
+}
+.slider_bottom_details p{
+    color: rgba(255,255,255,.7);
+    font-family: Inter,sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.588;
+}
+
+
+#countries_that_trust_us{
+    width: 80%;
+    height: 100%;
+    margin: 5% auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#countries_that_trust_us_texts{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#countries_that_trust_us_main_text h2{
+    font-size: 1.7rem;
+    line-height: 1.2;
+    font-family: "Inter",sans-serif;
+    font-weight: 700;
+    color: #0f0f0f;
+    margin-bottom: 2%;
+}
+#countries_that_trust_us_main_text h2 span{
+    color: #fc5b3f;
+}
+#countries_that_trust_us_main_text p{
+    font-family: "Inter",sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.588;
+    color: #717070;
+    margin-bottom: 2%;
+}
+#countries_that_trust_us_details_holder{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.countries_that_trust_us_details{
+    width: 10vw;
+    height: 15vh;
+    border: 0.5px solid #d4d4d4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+    color: rgb(133, 133, 133);
+}
+.countries_that_trust_us_details span{
+    transition: all .5s ease-in-out;
+}
+.countries_that_trust_us_details:hover{
+    border-color: #ff593c;
+}
+.countries_that_trust_us_details:hover span{
+    color: #fc5b3f;
+}
+
+#countries_that_trust_us_image{
+    width: 50%;
+    height: 100%;
+}
+#countries_that_trust_us_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+#trade_types_section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #0f0f0f;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+#trade_types_section_text{
+    width: 30%;
+    height: fit-content;
+}
+#trade_types_section_text h2{
+    color: #fff;
+    font-size: 1.7rem;
+    line-height: 1.2;
+    font-family: "Inter",sans-serif;
+    font-weight: 700;
+    margin-bottom: 2%;
+}
+#trade_types_section_text p{
+    font-size: 1.294rem;
+    line-height: 1.5;
+    color: #727272;
+    font-weight: 400;
+}
+#trade_types_section_text button{
+    /* border: 0.5px solid #ff593c; */
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+    padding: 15px 20px;
+    margin-top: 5%;
+    box-shadow: inset 0 0 0 2px #fc5b3f;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "Inter", sans-serif;
+}
+#trade_types_section_text button:hover{
+    background-color: #ff593c;
+}
+#trade_types_section_text button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#trade_types_section_images{
+    width: 60%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2% 0;
+}
+.trade_type{
+    width: 16vw;
+    height: 35vh;
+    background-color: rgb(37, 37, 37);
+    border-radius: 5px;
+}
+.trade_type img{
+    width: 100%;
+    height: 60%;
+    object-fit: contain;
+    padding: 10px 0;
+}
+.trade_type p{
+    color: #fff;
+    font-size: 1.412rem;
+    line-height: 1.2;
+    font-family: "Inter",sans-serif;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+#what_we_do{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+.details_on_what_we_do{
+    width: 45%;
+    height: 100%;
+    margin-bottom: 4%;
+}
+.details_on_what_we_do h2{
+    font-size: 1.412rem;
+    line-height: 1.2;
+    font-family: "Inter",sans-serif;
+    font-weight: 700;
+    color: #0f0f0f;
+    margin-bottom: 2%;
+}
+.details_on_what_we_do p{
+    font-family: Inter,sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.588;
+    color: #717070;
+}
+
+
+#steps_to_start_trading{
+    width: 70%;
+    height: fit-content;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.5px solid #999;
+    border-radius: 10px;
+}
+#steps_to_start_trading_heading{
+    width: fit-content;
+    height: fit-content;
+    background-color: #fff;
+    padding: 10px;
+    font-family: "Inter",sans-serif;
+    font-weight: 700;
+    color: #fc5b3f;
+    font-size: .95rem;
+    line-height: 1.2;
+    position: relative;
+    top: -3.5vh;
+}
+#steps_to_start_trading_body{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 4%;
+    justify-content: space-around;
+}
+.steps_to_open_an_account{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#steps_to_start_trading_body hr{
+    width: 25%;
+    height: 0.5px;
+    background-color: #999;
+    margin-top: 2%;
+}
+.steps_to_open_an_account h3{
+    width: 44px;
+    height: 44px;
+    background-color: #fff;
+    box-shadow: inset 0px 0px 0px 2px #fc5b3f;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    color: #fc5b3f;
+    margin-bottom: 4%;
+    position: relative;
+    border-radius: 500px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.steps_to_open_an_account p{
+    font-family: Inter,sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.588;
+    color: #666;
+}
+
+
+
+#experience_on_platforms_we_trade_on{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(240, 240, 240);
+}
+#experience_on_platforms_we_trade_on_content_holder{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+#experience_on_platforms_we_trade_on_image{
+    width: 50%;
+    height: 100%;
+}
+#experience_on_platforms_we_trade_on_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+#experience_on_platforms_we_trade_on_text{
+    width: 40%;
+    height: fit-content;
+}
+#experience_on_platforms_we_trade_on_text h2{
+    font-size: 2rem;
+    line-height: 1.2;
+    font-family: "Inter",sans-serif;
+    font-weight: 700;
+    color: #0f0f0f;
+    text-transform: none;
+    margin-bottom: 4%;
+}
+#experience_on_platforms_we_trade_on_text p{
+    font-family: Inter,sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.588;
+    color: #717070
+}
+
+
+
+
+
+
+/* Risk Management */
+
+#risk_management_body{
+    width: 60%;
+    height: 100%;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: justify;
+    padding-bottom: 3%;
+    border: 0.2px solid rgb(192, 192, 192);
+    border-radius: 7px;
+    overflow: hidden;
+}
+#risk_management_image{
+    width: 100%;
+    height: 100%;
+}
+#risk_management_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.risk_management_texts{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.risk_management_texts h2{
+    font-size: 1.8rem;
+    font-family: cursive;
+    margin-bottom: 2%;
+}
+.risk_management_texts p{
+    font-size: 1.1rem;
+    color: rgb(90, 90, 90);
+    font-family: cursive;
+    /* font-weight: lighter;
+    font-size: smaller; */
+    margin-bottom: 1.5%;
+}
+.risk_management_texts ul{
+    margin-left: 6%;
+}
+.risk_management_texts ul li{
+    padding: 5px 0px;
+    font-size: 1.1rem;
+    color: rgb(90, 90, 90);
+    font-family: cursive;
+}
+
+/* Risk Management ending */
+
+
+
+
+
+
+
+/* About Us */
+
+#about_us_content{
+    width: 60%;
+    height: 100%;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: justify;
+    border: 0.2px solid rgb(192, 192, 192);
+    border-radius: 7px;
+}
+#about_us_image{
+    width: 100%;
+    height: 100%;
+}
+#about_us_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about_us_texts{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.about_us_texts h2{
+    font-size: 1.8rem;
+    font-family: cursive;
+    margin-bottom: 2%;
+}
+.about_us_texts p{
+    font-size: 1.1rem;
+    color: rgb(90, 90, 90);
+    font-family: cursive;
+    /* font-weight: lighter;
+    font-size: smaller; */
+    margin-bottom: 1.5%;
+}
+
+/* About Us Ending */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contact page beginning */
+
+#contact_page_intro{
+    width: 50%;
+    height: 100%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#contact_page_intro h2{
+    font-size: 1.8rem;
+    font-family: "Inter", "cursive",sans-serif;
+    color: #0f0f0f;
+    font-weight: 700;
+    margin-bottom: 2%;
+
+}
+#contact_page_intro h2 span{
+    color: rgb(250, 98, 98);
+}
+#contact_page_intro p{
+    color: #999!important;
+    font-size: 1.294rem;
+    font-weight: 400;
+}
+
+
+#contact_page_body{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-bottom: 13%;
+}
+#contact_page_body p{
+    font-family: "Inter",sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.588;
+    -webkit-text-size-adjust: 100%;
+    background: #fff;
+    color: #717070;
+}
+#contact_page_body form{
+    width: 55%;
+    height: 100%;
+}
+#contact_page_body form input{
+    width: 90%;
+    height: 15%;
+    padding: 15px 8px;
+    margin-bottom: 2%;
+    border-radius: 6px;
+    border: 1px solid #e5e5e5;
+    color: #666;
+}
+#contact_page_body form textarea{
+    width: 90%;
+    height: 200px;
+    border-radius: 6px;
+    margin-bottom: 2%;
+    color: #666;
+    border: 1px solid #e5e5e5;
+    padding: 10px 8px;
+}
+#contact_page_body form #submit_btn{
+    font-family: "Inter", sans-serif;
+    border-radius: 6px;
+    width: 93%;
+    background-color: #fc5b3f;
+    color: #fff;
+    padding: 13px 21px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px
+}
+
+
+#contact_page_contact_means{
+    width: 43%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#contact_page_contact_means_top_part{
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 5%;
+}
+#contact_page_contact_means_top_part h2{
+    font-size: 1.2rem;
+    margin-bottom: 2%;
+}
+
+#contact_page_contact_means_bottom_part{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+.contact_means{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact_means i{
+    width: fit-content;
+    height: fit-content;
+    background-color: #fc5b3f;
+    color: #fff;
+    border-radius: 500px;
+    padding: 13px;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 1.175em;
+    text-align: center;
+}
+.contact_means p{
+    width: 85%;
+    height: fit-content;
+}
+/* Contact page ending */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    background-color: rgb(32, 32, 32);
+    padding-bottom: 20px;
+}
+/* footer::after{
+    content: '';
+    position: absolute;
+    align-self:baseline;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(29, 29, 29, 0.1);
+} */
+#footer_head{
+    width: 100%;
+    height: fit-content;
+    background-color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    padding: 15px 0px;
+}
+.footer_head_icon{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    font-family: cursive;
+}
+.footer_head_icon i{
+    padding: 10px;
+    border: 0.5px solid #fff;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.footer_head_icon p{
+    font-size: 1.03rem;
+}
+
+#footer_body{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+#footer_contact_details{
+    width: 100%;
+    height: 5vh;
+    padding: 10px 0px;
+    margin-top: 4%;
+    display: flex;
+    justify-content: right;
+}
+#footer_contact_details p{
+    font-size: .9rem;
+    font-family: cursive;
+    margin-left: 10%;
+    color: rgb(202, 202, 202);
+}
+#footer_infos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+}
+.footer_info{
+    width: 20%;
+    height: 100%;
+
+}
+.footer_info h2{
+    font-size: 1.4rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 9%;
+}
+.footer_info p{
+    font-size: .9rem;
+    color: rgb(165, 165, 165);
+    margin-bottom: 7%;
+}
+
+#footer_copyright{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3%;
+    font-family: cursive;
+    font-size: 1.02rem;
+    color: rgb(202, 202, 202);
+}
+#footer_copyright hr{
+    width: 64%;
+    height: 0.1px;
+    background-color: rgb(165, 165, 165);
+}
+#footer_extra_details{
+    color: rgb(165, 165, 165);
+    font-family: cursive;
+    font-size: .94rem;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+
+    /* nav beginning */
+
+    
+    .menu-icon{
+        display: block;
+        font-size: 1.5rem;
+    }
+    #header_menus{
+        display: none;
+    }
+
+    /* nav ending */
+
+
+
+    /* Home page */
+        
+    .slide_text{
+        width: 90%;
+        margin-top: 5%;
+    }
+    .slide_text h2{
+        font-size: 2rem;
+        margin-bottom: 5%;
+    }
+    .slide_text p{
+        font-size: 1.05rem;
+    }
+    .slide_image{
+        width: 90%;
+        height: 100%;
+    }
+    #slider_bottom_details_holder{
+        display: none;
+    }
+
+    #countries_that_trust_us_texts{
+        width: 100%;
+    }
+    #countries_that_trust_us_image{
+        width: 100%;
+    }
+    .countries_that_trust_us_details{
+        width: 45%;
+        margin-bottom: 5%;
+    }
+
+    #trade_types_section_text{
+        width: 90%;
+        margin: 5% auto;
+    }
+    #trade_types_section_images{
+        width: 100%;
+    }
+    .trade_type{
+        width: 45%;
+        margin-bottom: 5%;
+    }
+
+    #what_we_do{
+        margin-bottom: 10%;
+    }
+    .details_on_what_we_do{
+        width: 80%;
+        margin: 3% auto;
+    }
+
+    #steps_to_start_trading_body hr{
+        display: none;
+    }
+    .steps_to_open_an_account{
+        width: 80%;
+        margin-bottom: 8%;
+    }   
+    .steps_to_open_an_account h3{
+        width: 55px;
+        height: 55px;
+        font-size: 1.5rem;
+    }
+    .steps_to_open_an_account p{
+        font-size: .9rem;
+    }
+
+    #experience_on_platforms_we_trade_on{
+        margin-bottom: 10%;
+    }
+    #experience_on_platforms_we_trade_on_content_holder{
+        width: 90%;
+    }
+    #experience_on_platforms_we_trade_on_image{
+        width: 100%;
+        margin-bottom: 4%;
+    }
+    #experience_on_platforms_we_trade_on_text{
+        width: 100%;
+    }
+
+    /* index page ending */
+
+
+
+    /* about us page */
+
+    #about_us_content{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    /* about us page ending */
+
+
+
+    /* risk management page */
+
+    #risk_management_body{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    /* risk management page ending */
+
+
+    #contact_page_intro{
+        width: 80%;
+    }
+    #contact_page_body form{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    #contact_page_contact_means{
+        width: 100%;
+    }
+
+
+    /* footer */
+    #footer_head{
+        padding-top: 20px;
+    }
+    .footer_head_icon{
+        width: 80%;
+        margin-bottom: 5%;
+    }
+    .footer_info{
+        width: 90%;
+    }
+    #footer_copyright{
+        margin-bottom: 6%;
+    }
+    #footer_copyright p{
+        width: fit-content;
+        font-size: .8rem;
+    }
+    #footer_copyright hr{
+        width: 26%;
+    }
+    #footer_extra_details{
+        font-size: .85rem;
+    }
+}
